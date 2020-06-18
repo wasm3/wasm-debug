@@ -24,7 +24,7 @@ NOTE: This is work-in-progress, and highly experimental!
 ---
 
 This work should actually be a good starting point to start adding direct **wasm** support to debuggers.  
-Looks like LLDB already [started some movement](https://reviews.llvm.org/D71575) in this direction.  
+Looks like LLDB already started some movement in this direction (see [here](https://reviews.llvm.org/D71575) and [here](https://reviews.llvm.org/D78801)).  
 Also, DWARF format [has to be extended](https://yurydelendik.github.io/webassembly-dwarf/#DWARF-expressions-and-location-descriptions) to allow representing wasm local, global or operand stack variables.
 
 ## Building test apps
