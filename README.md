@@ -2,24 +2,25 @@
 
 Direct, source-level WebAssembly debugger
 
-**This is work-in-progress, and highly experimental!**
-
 We're exploring the possibility of **direct**, **source-level** debugging of WebAssembly binaries.  
 `rustc`/`clang` compilers can generate DWARF debug info, and embed it into the **wasm** binaries,  
 however debuggers like `gdb`/`lldb` currently do not know how to work with such files directly.
 
-Achievements:
+**Status:**
 - Created `wasm2dbg.py` utility to repackage the DWARF info from `wasm` to `elf` format.  
-  The resulting file can be loaded into unmodified versions of debuggers.
+  The resulting file can be loaded by unmodified versions of debuggers.
 - Created `gdb-stub.py`, which uses **GDB Remote Serial Protocol** to communicate to `gdb` and `lldb`.  
-  This a prototype of a VM that succesfully emulates a breakpoint hit.  
+  This a prototype of a VM that succesfully emulates a breakpoint hit.
 
-Next:
+**Next:**
 - Implement `Wasm3`-based opcode-level debugger
 - Connect `Wasm3` to `gdb`/`lldb` via `Remote Serial Protocol`
 
-It's all just a prototype.  
-This work should actually be a good starting point to start adding direct **wasm** support to debuggers.
+NOTE: This is work-in-progress, and highly experimental!
+---
+
+This work should actually be a good starting point to start adding direct **wasm** support to debuggers.  
+Looks like LLDB already [started some movement](https://reviews.llvm.org/D71575) in this direction.
 
 ## Building test apps
 
