@@ -2,7 +2,7 @@
 
 Direct, source-level WebAssembly debugger
 
-<img align="right" width="60%" src="/prototype/screenshot.png">
+<img width="80%" src="/prototype/screenshot.png">
 
 We're exploring the possibility of **direct**, **source-level** debugging of WebAssembly binaries.  
 `rustc`/`clang` compilers can generate DWARF debug info, and embed it into the **wasm** binaries,  
