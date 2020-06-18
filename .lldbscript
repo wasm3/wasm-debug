@@ -1,0 +1,5 @@
+gdb-remote 4444
+target modules load --file app.wasm.dbg .text 0 .data 0
+
+b main
+c

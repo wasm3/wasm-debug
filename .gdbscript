@@ -1,0 +1,6 @@
+set height 0
+set confirm off
+
+target extended-remote :4444
+b main
+c

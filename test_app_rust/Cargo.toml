@@ -1,0 +1,11 @@
+[package]
+name = "test_app_rust"
+version = "0.0.1"
+authors = ["Volodymyr Shymanskyy"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+path = "src/main.rs"
+name = "app"
