@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+"""
+Project:  Wasm3
+File:     wasm2dbg.py
+Author:   Volodymyr Shymanskyy
+Created:  18.06.2020
+"""
+
 import re
 import tempfile
 import os
