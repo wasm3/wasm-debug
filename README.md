@@ -14,7 +14,7 @@ however debuggers like `gdb`/`lldb` currently do not know how to work with such 
 - Created `wasm2dbg.py` utility to repackage the DWARF info from `wasm` to `elf` format.  
   The resulting file can be loaded by unmodified versions of debuggers.
 - Created `gdb-stub.py`, which uses **GDB Remote Serial Protocol** to communicate to `gdb` and `lldb`.  
-  This a prototype of a VM that succesfully emulates a breakpoint hit.
+  This is a prototype of a VM that successfully emulates a breakpoint hit.
 
 **Next:**
 - Implement `Wasm3`-based opcode-level debugger
